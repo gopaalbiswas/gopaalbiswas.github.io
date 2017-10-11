@@ -79,12 +79,28 @@ p {
 h1, h2, h3, h4, h5, h6 {
 	color: #767676;
 }
+/*==============================================================================================
+================================================================================================*/
+.navbar-gopaal {
+	padding: 10px 0;
+}
+.name-owner h3 {
+	margin-top: 15px;
+}
+.name-owner h3 a {
+	color: #ccc;
+}
+.main-nav-custom li a {
+	color: #ccc !important;
+}
+.main-title h1 {
+	color: #fff;
+}
 h1 {
 	font-size: 48px;
 	line-height: 50px;
 	font-weight: 600;
 	font-family: 'Playfair Display', serif;
-	text-transform: uppercase;
 }
 h2 {
 	font-size: 40px;
@@ -225,8 +241,9 @@ a:hover {
 }
 .main_menu_bg {
 	margin-top: 0px;
+	background-color: #0a5a80;
 }
-.main_menu_bg .navbar-default {
+.main_menu_bg .navbar-gopaal {
 	background-color: transparent;
 	border-color: transparent;
 	transition: .6s;
@@ -234,19 +251,19 @@ a:hover {
 .container-fluid {
 	margin-top: 20px;
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+.navbar-gopaal .navbar-nav>li>a:hover, .navbar-gopaal .navbar-nav>li>a:focus {
 	color: #3c3c3c;
 }
 .main_menu_bg .navbar {
 	margin-bottom: 0px;
 }
-.main_menu_bg .navbar-default .navbar-nav>.active>a {
+.main_menu_bg .navbar-gopaal .navbar-nav>.active>a {
 	border: 1px solid transparent;
 }
-.main_menu_bg .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+.main_menu_bg .navbar-gopaal .navbar-nav>.active>a, .navbar-gopaal .navbar-nav>.active>a:hover, .navbar-gopaal .navbar-nav>.active>a:focus {
 	color: #3c3c3c;
 	background-color: transparent;
-	border: 1px solid #666;
+	border: 1px solid #ccc;
 	text-transform: uppercase;
 }
 .main_menu_bg .navbar-nav>li>a {
@@ -256,9 +273,12 @@ a:hover {
 /* Banner section */
 
 .banner {
-	background: url(../images/bannerbg.jpg) no-repeat;
+	background-image: url(../images/bannerbg.jpg);
+	background-position: bottom center;
+	background-repeat: no-repeat;
 	position: relative;
 	background-size: cover;
+	height: 90vh;
 }
 .main_banner_area {
 	padding: 150px 0px 300px;
@@ -266,7 +286,7 @@ a:hover {
 }
 .single_banner_text p {
 	font-size: 20px;
-	color: #3c3c3c;
+	color: #fff;
 }
 /* features section */
 .features {
